@@ -1,0 +1,105 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif, thin;
+  top: 50%;
+}
+.sectionDivider{
+  margin-top: 10px;
+  margin-right: 20px;
+  width: 250px;
+  height: 20px;
+  opacity: 0.5;
+}
+.aboutTitle{
+  margin-left: 20px;
+   font-size: 40px;
+   color: #998087;
+}
+.aboutSection{
+
+  margin-left: 20px;
+  margin-top:10px;
+}
+
+.profilepic{
+  border-radius: 50%;
+  margin-right: 20px;
+  width: 250px;
+  height: 270px;
+  position: right:
+}
+
+.projectTitle{
+  margin-left: 40px;
+   font-size: 40px;
+   color: white;
+   font-weight:bold;
+}
+.navbar{
+  text-align: right;
+}
+.nav-link{
+  color:#746469;
+  margin-left: 30px;
+  text-align: right;
+}
+
+.nav-link:hover {
+  background-color: #998087;
+  color: white;
+    transition: 0.7s;
+}
+
+.overlay {
+  margin-top: 8vh 6vw;
+  width: 100%;
+  text-align: center;
+  font-size: calc(4vw + 4vh + 3vmin);
+     color: white;
+     font-weight: normal;
+}
+
+.subOverlay {
+  width: 100%;
+text-align: center;
+font-size: calc(.5vw + .5vh + 2vmin);
+
+   margin-top: -2vw;
+
+}
+
+
+.mb_parallax_container {
+  height: 100vh;
+  width: 100vw;
+  border-bottom: 5px solid white;
+  padding-top: 20vh;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position:  top center;
+  background-repeat: no-repeat;
+}
+
+.mb_parallax_overlay {
+  height: 300px;
+  width: 600px;
+  margin-left: 0;
+  background-color: grey;
+  opacity: .5;
+      z-index: 2;
+}
+
+#mb_parallax_one {
+  background-image: url(./img/muaveSFbg.png);
+
+      z-index: -1;
+}
+
+#mb_parallax_two {
+  background-color:white;
+}
+
+#mb_parallax_three {
+  background-image: url(./img/triangleBG.png);
+}
