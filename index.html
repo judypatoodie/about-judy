@@ -8,6 +8,7 @@
   <link href="//fonts.googleapis.com/css?family=Francois+One" rel="stylesheet" type="text/css">
   <link href="//fonts.googleapis.com/css?family=Thasadith" rel="stylesheet" type="text/css">
 </head>
+
 <body onload="intervalSet()">
   <nav class="navbar navbar-fixed-top navbar-expand-md navbar-dark bg-dark">
     <div class="container">
@@ -23,13 +24,13 @@
     <div class="collapse navbar-collapse" id="navbar">
       <ul class="navbar-nav ml-auto">
         <li class="nav-item">
-          <a class="nav-link" href="#">HOME</a>
+          <a class="nav-link" href="https://portfolio-jh.herokuapp.com/">HOME</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#aboutSection">ABOUT</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">PROJECTS</a>
+          <a class="nav-link" href="#projectTitle">PROJECTS</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#">CONTACT</a>
@@ -41,12 +42,12 @@
 
   <div class="mb_parallax_container" id="mb_parallax_one">
       <p class="overlay">I <b style="color:black;">'</b> M <br> J U D Y<br> H U Y N H <b style="color:black;">.</b></p>
-      <p class="subOverlay"><b>WEB DEVELOPER FROM SAN FRANCISCO</b></p>
+      <p id="subOverlay"></p>
   </div>
 
   <section class="aboutSection" id="aboutSection">
     <p class="aboutTitle" style="font-weight:bold">
-        About. <img class="sectionDivider d-none d-sm-block" align="right" src="./img/sectionDiv.png">
+      About. <img class="sectionDivider d-none d-sm-block" align="right" src="./img/sectionDiv.png">
     </p>
      <div class="description" style="margin-left:20px">
         <img class="profilepic" align="right" src="./img/muaveAboutPic.jpg" style="margin-top:-20px">
@@ -67,30 +68,30 @@
 
   <div class="mb_parallax_container" id="mb_parallax_three">
 
-    <p class="projectTitle" style="margin-top:-120px">
-      PROJECTS.
+    <p class="projectTitle" id="projectTitle" style="margin-top:-120px">
+      Projects.
     </p>
 
   </div>
 
 
 
-<!--<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
--->
+
 <script type="text/javascript">
 var i = 0;
-var txt = 'hi there!';
+var txt = 'WEB DEVELOPER FROM SAN FRANCISCO';
 
 function intervalSet(){
  setInterval(function typeWriter() {
     if (i < txt.length) {
-      document.getElementsByClassName("subOverlay").innerHTML += txt.charAt(i);
+      document.getElementById("subOverlay").innerHTML += txt.charAt(i);
       i++;
-    } else { document.getElementsByClassName("subOverlay").innerHTML = ""; i = 0}
+    }
 
-  },300);
+  },150);
 }
 </script>
 </body>
