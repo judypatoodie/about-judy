@@ -3,6 +3,13 @@ body {
   padding: 0;
   font-family: 'Thasadith', sans-serif;
   top: 50%;
+  position: relative;
+  padding-top: 44px;
+}
+
+table{
+  border-radius: 20px;
+  overflow:hidden;
 }
 .sectionDivider{
   margin-top: 10px;
@@ -12,14 +19,13 @@ body {
   opacity: 0.5;
 }
 .aboutTitle{
-  margin-left: 20px;
-   font-size: 60px;
+   font-size: 40px;
    color: #998087;
    font-family: 'Thasadith', sans-serif;
 
 }
 .aboutSection{
-
+  margin-left: 20px;
   margin-left: 20px;
   margin-top:10px;
 }
@@ -40,7 +46,8 @@ body {
 }
 .navbar{
   text-align: right;
-  min-height:30px !important
+  min-height:30px !important;
+  opacity: 0.9;
 }
 
 .navbar-nav > li > a {
@@ -105,7 +112,7 @@ body {
 }
 
 #mb_parallax_one {
-  background-image: url(./img/bigMauveBg-min.jpg);
+  background-image: url(./img/mauveSFbg-compr.jpg);
 
       z-index: -1;
 }

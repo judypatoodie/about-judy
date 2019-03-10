@@ -9,8 +9,8 @@
   <link href="//fonts.googleapis.com/css?family=Thasadith" rel="stylesheet" type="text/css">
 </head>
 
-<body onload="intervalSet()">
-  <nav class="navbar navbar-fixed-top navbar-expand-md navbar-dark bg-dark">
+<body onload="intervalSet()" data-spy="scroll" data-target=".navbar" data-offset="50">
+  <nav class="navbar fixed-top navbar-expand-md navbar-dark bg-dark" id="navbar-scroll">
     <div class="container">
       <button
       class="navbar-toggler ml-auto"
@@ -24,7 +24,7 @@
     <div class="collapse navbar-collapse" id="navbar">
       <ul class="navbar-nav ml-auto">
         <li class="nav-item">
-          <a class="nav-link" href="https://portfolio-jh.herokuapp.com/">HOME</a>
+          <a class="nav-link" href="#mb_parallax_one">HOME</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#aboutSection">ABOUT</a>
@@ -40,6 +40,11 @@
     </div>
   </nav>
 
+
+
+
+
+
   <div class="mb_parallax_container img-responsive center-block" id="mb_parallax_one">
       <p class="overlay">I <b style="color:black;">'</b> M <br> J U D Y<br> H U Y N H <b style="color:black;">.</b></p>
       <p id="subOverlay"></p>
@@ -47,7 +52,7 @@
 
   <section class="aboutSection" id="aboutSection">
     <p class="aboutTitle" style="font-weight:bold">
-      About. <img class="sectionDivider d-none d-sm-block" align="right" src="./img/sectionDiv.png">
+      About. <img class="sectionDivider d-none d-sm-block" align="right" src="./img/sectionDiv.png" style="height:10px">
     </p>
      <div class="description" style="margin-left:20px">
         <img class="profilepic" align="right" src="./img/muaveAboutPic.jpg" style="margin-top:-20px">
@@ -56,13 +61,54 @@
         in Information Systems and a Web Development Certification with Bloc's immersive
         Full Stack Web Dev apprenticeship.
         <p style="color:#998087;font-size:40px;margin-top:20px;margin-left:20px">
-          Technologies.
+          <img class="sectionDivider d-none d-sm-block" align="left" src="./img/sectionDiv.png" style="margin-left:-20px; height:10px">
+          <br>Technologies.
         </p>
-        <ul>
-          <li><b>Front-end:</b> HTML5, CSS, JavaScript, React.js</li>
-          <li><b>Back-end:</b> Node.js, APIs, PostgreSQL, Sequelize, Express, Jasmine, Bash Terminal</li>
-          <li><b>Dev Tools</b> Atom, Bootstrap, Jira, Github, Heroku, AWS, Google Dev Console, New Relic, Firebase
-        </ul>
+
+
+        <table class="table" style="width:500px;  margin-left: 30px;background-color:#f0f0f0;">
+            <thead style="background-color:#505050;color:white">
+              <tr>
+
+                <th scope="col">Front-end</th>
+                <th scope="col">Back-end</th>
+                <th scope="col">Dev Tools</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+
+                <td>
+                  HTML
+                  <br> CSS
+                  <br>Javascript
+                  <br>React.js
+                </td>
+                <td>
+                  APIs
+                  <br>Node.js
+                  <br>PostgresSQL
+                  <br>Firebase
+                  <br>Sequelize
+                  <br>Express
+                  <br>Jasmine
+                </td>
+
+                <td>
+                  Atom
+                  <br>AWS
+                  <br>Bootstrap
+                  <br>Github
+                  <br>Google Dev Console
+                  <br>Github
+                  <br>New Relic
+                </td>
+              </tr>
+
+            </tbody>
+          </table>
+
+
       </div>
     </section>
 
@@ -72,8 +118,8 @@
       Projects.
     </p>
 
-  </div>
 
+  </div>
 
 
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
