@@ -106,7 +106,7 @@ font-size: calc(.5vw + .5vh + 2vmin);
 }
 
 #mb_parallax_one {
-  background-image: url(./img/mauveSFbg-min.jpg);
+  background-image: url(./img/mauveBG.jpg);
 
       z-index: -1;
 }
