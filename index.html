@@ -8,7 +8,7 @@
   <link href="//fonts.googleapis.com/css?family=Francois+One" rel="stylesheet" type="text/css">
   <link href="//fonts.googleapis.com/css?family=Thasadith" rel="stylesheet" type="text/css">
 </head>
-<body>
+<body onload="intervalSet()">
   <nav class="navbar navbar-fixed-top navbar-expand-md navbar-dark bg-dark">
     <div class="container">
       <button
@@ -60,7 +60,7 @@
         <ul>
           <li><b>Front-end:</b> HTML5, CSS, JavaScript, React.js</li>
           <li><b>Back-end:</b> Node.js, APIs, PostgreSQL, Sequelize, Express, Jasmine, Bash Terminal</li>
-          <li><b>Dev Tools</b> Atom, Bootstrap, Jira, Github, Codepen, Repl.it, Firebase
+          <li><b>Dev Tools</b> Atom, Bootstrap, Jira, Github, Heroku, AWS, Google Dev Console, New Relic, Firebase
         </ul>
       </div>
     </section>
@@ -75,7 +75,22 @@
 
 
 
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<!--<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+-->
+<script type="text/javascript">
+var i = 0;
+var txt = 'hi there!';
+
+function intervalSet(){
+ setInterval(function typeWriter() {
+    if (i < txt.length) {
+      document.getElementsByClassName("subOverlay").innerHTML += txt.charAt(i);
+      i++;
+    } else { document.getElementsByClassName("subOverlay").innerHTML = ""; i = 0}
+
+  },300);
+}
+</script>
 </body>
