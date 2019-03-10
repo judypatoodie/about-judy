@@ -77,9 +77,8 @@ body {
 
 #subOverlay {
   width: 100%;
-text-align: center;
-font-size: calc(.5vw + .5vh + 2vmin);
-
+  text-align: center;
+  font-size: calc(.5vw + .5vh + 2vmin);
    margin-top: -2vw;
 
 }
@@ -106,7 +105,7 @@ font-size: calc(.5vw + .5vh + 2vmin);
 }
 
 #mb_parallax_one {
-  background-image: url(./img/mauveSFbg-min.jpg);
+  background-image: url(./img/bigMauveBg-min.jpg);
 
       z-index: -1;
 }
