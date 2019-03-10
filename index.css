@@ -20,6 +20,7 @@ table{
   width: 250px;
   height: 20px;
   opacity: 0.5;
+  height:10px
 }
 .aboutTitle{
    font-size: 40px;
@@ -38,7 +39,8 @@ table{
   margin-right: 20px;
   width: 250px;
   height: 270px;
-  position: right:
+  margin-top:-20px;
+  position: right;
 }
 
 .projectTitle{
@@ -46,6 +48,7 @@ table{
    font-size: 40px;
    color: white;
    font-weight:bold;
+   margin-top:-100px
 }
 .navbar{
   text-align: right;
@@ -70,7 +73,7 @@ table{
 }
 
 .overlay {
-  margin-top: 8vh 6vw;
+  margin-top: 7vh 3vw;
   width: 100%;
   text-align: center;
   font-size: calc(4vw + 4vh + 3vmin);
