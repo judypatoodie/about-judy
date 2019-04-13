@@ -4,7 +4,21 @@ body {
   font-family: 'Thasadith', sans-serif;
   top: 50%;
   position: relative;
-  padding-top: 44px;
+
+}
+
+.light {
+  background-color: #fff;
+  color: #000;
+    transition: background-color 0.2s linear;
+}
+
+ .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0,0,0, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.navbar-toggler {
+  border-color: #000;
 }
 
 table{
@@ -71,15 +85,16 @@ a.aboutAnchor {
 }
 
 .nav-link{
-  color:#746469;
+  color:#000;
   margin-left: 30px;
   text-align: right;
 }
 
 .nav-link:hover {
+  opacity: 0.5;
   background-color: #998087;
   color: white;
-    transition: 0.7s;
+    transition: 2s ;
 }
 
 .overlay {
@@ -139,4 +154,12 @@ a.aboutAnchor {
 
 #mb_parallax_three {
   background-image: url(./img/triangleBG.png);
+}
+
+
+#test p {
+    opacity: 0;
+    font-size: 21px;
+    margin-top: 25px;
+    text-align: center;
 }

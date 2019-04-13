@@ -7,10 +7,11 @@
   <link rel="stylesheet" href="./index.css">
   <link href="//fonts.googleapis.com/css?family=Francois+One" rel="stylesheet" type="text/css">
   <link href="//fonts.googleapis.com/css?family=Thasadith" rel="stylesheet" type="text/css">
+
 </head>
 
 <body onload="intervalSet()" data-spy="scroll" data-target=".navbar" data-offset="50">
-  <nav class="navbar fixed-top navbar-expand-sm navbar-dark bg-dark " id="navbar-scroll">
+  <nav class="navbar fixed-top navbar-expand-sm  navbar-light" id="navbar-scroll">
     <div class="container">
       <button
       class="navbar-toggler ml-auto"
@@ -19,7 +20,7 @@
       data-target="#navbar"
       aria-expanded="false"
       aria-controls="navbar">
-        <span class="navbar-toggler-icon"></span>
+        <span class="navbar-toggler-icon .navbar-dark"></span>
       </button>
     <div class="collapse navbar-collapse" id="navbar">
       <ul class="navbar-nav ml-auto">
@@ -48,15 +49,18 @@
 
 
   <div class="mb_parallax_container img-responsive center-block" id="mb_parallax_one">
+    <section class="test">
       <p class="overlay">I <b style="color:black;">'</b> M <br> J U D Y<br> H U Y N H <b style="color:black;">.</b></p>
-      <p id="subOverlay"></p>
+      <p id="subOverlay"> WEB DEVELOPER BASED IN SAN FRANCISCO</p>
+    </section>
   </div>
 
 
 
   <section class="aboutSection">
+
   <a class="aboutAnchor" id="aboutAnchor"></a>
-    <p class="aboutTitle" style="font-weight:bold">
+    <p class="aboutTitle"  style="font-weight:bold">
       About.
       <img class="sectionDivider d-none d-sm-block" align="right" src="./img/sectionDiv.png">
     </p>
@@ -129,18 +133,10 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
-<script type="text/javascript">
-var i = 0;
-var txt = 'WEB DEVELOPER FROM SAN FRANCISCO';
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
-function intervalSet(){
- setInterval(function typeWriter() {
-    if (i < txt.length) {
-      document.getElementById("subOverlay").innerHTML += txt.charAt(i);
-      i++;
-    }
+<script type="text/javascript" src="jqueryEffects.js">>
 
-  },150);
-}
 </script>
+
 </body>
