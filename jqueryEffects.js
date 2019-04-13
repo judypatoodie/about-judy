@@ -11,7 +11,8 @@ $(window).scroll(function() {
       .addClass('navbar-dark bg-dark')
       .removeClass('navbar-light');
   } else {
-      $('.navbar').removeClass('navbar-dark bg-dark');
+      $('.navbar').removeClass('navbar-dark bg-dark')
+      .addClass('navbar-light');
   }
 });
 
