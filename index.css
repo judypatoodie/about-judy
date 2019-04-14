@@ -1,6 +1,6 @@
 * {
-  margin: 0;
-  padding: 0;
+  margin: 0px;
+  padding: 0px;
   font-family: 'Thasadith', sans-serif;
   vertical-align: baseline;
   background: transparent;
@@ -85,6 +85,8 @@ a.aboutAnchor {
   text-align: right;
   min-height:30px !important;
   opacity: 0.9;
+  margin: 0;
+  padding 0;
 }
 
 .navbar-nav > li > a {
@@ -151,8 +153,8 @@ a.aboutAnchor {
 
 #mb_parallax_one {
   background-image: url(./img/mauveSFbg-compr.jpg);
-
       z-index: -1;
+
 }
 
 #mb_parallax_two {
