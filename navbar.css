@@ -3,9 +3,9 @@
 }
 
 .navbar-light{
- background-color: transparent;
-background: transparent;
 border-color: transparent;
+background: rgba(255, 255, 255, 0.2);
+
 }
 
 .navbar-toggler {
@@ -31,9 +31,6 @@ border-color: transparent;
 }
 
 
-
-
-
 .navbar-nav .nav-item .nav-link:hover {
   opacity: 0.5;
   background-color: #998087;
@@ -43,9 +40,6 @@ border-color: transparent;
     transition: 2s ;
 }
 
-
-
-
 #resume{
   border-color: #000;
   border-style: solid;
@@ -54,7 +48,7 @@ border-color: transparent;
 }
 
 @media (max-width: 600px) {
-#resume {
-    border-width: 0px;
-}
+  #resume {
+      border-width: 0px;
+  }
 }
