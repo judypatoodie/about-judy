@@ -43,12 +43,12 @@ border-radius: 20px;
   text-align: left;
 }
 
-.projectContainer:hover .projectImage, .projectContainer:active .projectImage {
+.projectContainer:hover .projectImage, .projectContainer:active, .projectImage:active {
   opacity: .2;
   transition: 1s ;
 }
 
-.projectContainer:hover .middle, .projectContainer:active .middle {
+.projectContainer:hover .middle, .projectContainer:active, .projectImage:active {
   opacity: 1;
 }
 
