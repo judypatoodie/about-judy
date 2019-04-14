@@ -44,14 +44,9 @@ border-radius: 20px;
   height: 250px;
   width: 350px;
   display:table;
-  transform: translate(3%, -100%);
+  transform: translate(2%, -100%);
   text-align: left;
 }
-
-#test:focus{
-    outline: 2px solid blue;
-}
-
 
 
 .projectContainer:hover .projectImage {
@@ -69,16 +64,14 @@ border-radius: 20px;
 .projectContainer:focus .middle {
   outline: none;
   box-shadow: none;
-
   opacity: 1;
 }
 
 .projectContainer:focus .projectImage {
     outline: none;
     box-shadow: none;
-
-  opacity: .2;
-  transition: 1s ;
+    opacity: .2;
+    transition: 1s ;
 }
 
 .projectText {
@@ -108,26 +101,38 @@ th{
   padding-left: 40px;
 }
 
-.sectionDivider{
-  margin-top: 10px;
-  margin-right: 20px;
-  width: 250px;
-  height: 20px;
-  opacity: 0.5;
-  height:10px
-}
+
 .aboutTitle{
    font-size: 40px;
+     margin-left: 40px;
    color: #998087;
    font-family: 'Thasadith', sans-serif;
+   white-space: nowrap;
 
 }
+
+
+
+.aboutTitle:after {
+  content: "";
+  display: inline-block;
+  height: 1px;
+  width: 80%;
+  background-color: #998087;
+  position: relative;
+  top: -10px;
+}
+
 .aboutSection{
 
-  margin-top:10px;
+  padding-top:10px;
 
+}
 
-
+.description{
+max-width: 800px;
+  left: 50%;
+  transform: translate(-50%, 0%);
 }
 
 a.aboutAnchor {
@@ -211,12 +216,4 @@ a.aboutAnchor {
 
 #mb_parallax_three {
   background-image: url(./img/triangleBG.png);
-}
-
-
-#test p {
-    opacity: 0;
-    font-size: 21px;
-    margin-top: 25px;
-    text-align: center;
 }
