@@ -52,3 +52,9 @@ border-color: transparent;
   border-radius: 5px;
   border-width: 1px;
 }
+
+@media (max-width: 600px) {
+#resume {
+    border-width: 0px;
+}
+}

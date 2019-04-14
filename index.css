@@ -43,12 +43,12 @@ border-radius: 20px;
   text-align: left;
 }
 
-.projectContainer:hover .projectImage {
+.projectContainer:hover .projectImage, .projectContainer:active .projectImage {
   opacity: .2;
   transition: 1s ;
 }
 
-.projectContainer:hover .middle {
+.projectContainer:hover .middle, .projectContainer:active .middle {
   opacity: 1;
 }
 
@@ -63,8 +63,8 @@ border-radius: 20px;
 #projectIcons > a{
   display: inline-block;
   display: -moz-inline-box;
-  *display: inline; /* For IE7 */
-  zoom: 1; /* Trigger hasLayout */
+  display: inline;
+  zoom: 1;
   width: 15%;
   text-align: center;
 
