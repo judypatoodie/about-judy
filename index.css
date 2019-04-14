@@ -8,6 +8,68 @@
 
 }
 
+#giticon:hover{
+border-style: solid;
+border-color: white;
+border-width: 1px;
+border-radius: 20px;
+}
+
+.projectContainer{
+  background-color: gray;
+  height: 250px;
+  width: 350px;
+  position: relative;
+}
+
+.projectImage{
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  height: 250px;
+  width: 350px;
+  display:table;
+  transform: translate(3%, -100%);
+  text-align: left;
+}
+
+.projectContainer:hover .projectImage {
+  opacity: .2;
+  transition: 1s ;
+}
+
+.projectContainer:hover .middle {
+  opacity: 1;
+}
+
+.projectText {
+  color: #f5f2d0;
+  font-size: 16px;
+  display: table-cell;
+  vertical-align: bottom;
+
+}
+
+#projectIcons > a{
+  display: inline-block;
+  display: -moz-inline-box;
+  *display: inline; /* For IE7 */
+  zoom: 1; /* Trigger hasLayout */
+  width: 15%;
+  text-align: center;
+
+}
+
 table{
   border-radius: 20px;
   overflow:hidden;
@@ -58,7 +120,6 @@ a.aboutAnchor {
   margin-left: 40px;
    font-size: 40px;
    color: white;
-   font-weight:bold;
    margin-top:-100px
 }
 
