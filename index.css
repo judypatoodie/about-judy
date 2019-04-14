@@ -3,7 +3,6 @@
   margin: 0px;
   padding: 0px;
   font-family: 'Thasadith', sans-serif;
-  vertical-align: baseline;
   background: transparent;
   position: relative;
 
@@ -17,7 +16,7 @@ border-color: white;
 border-width: 1px;
 border-radius: 20px;
 }
-
+/*
 .projectContainer{
   background-color: gray;
   height: 250px;
@@ -94,7 +93,7 @@ border-radius: 20px;
 
 
 }
-
+*/
 table{
   border-radius: 20px;
   overflow:hidden;
@@ -152,18 +151,20 @@ a.aboutAnchor {
   padding-right: 20px;
   width: 250px;
   height: 240px;
-
   position: right;
 }
 
 .projectTitle{
-  padding-left: 40px;
    font-size: 40px;
    color: white;
-   top:-100px;
+
 
 }
 
+.projectsSection{
+  padding-left:40px;
+  top:-100px;
+}
 
 .overlay {
   top: 7vh 3vw;
