@@ -2,10 +2,26 @@
 * {
   margin: 0px;
   padding: 0px;
+
   font-family: 'Thasadith', sans-serif;
   background: transparent;
   position: relative;
+}
 
+
+
+.contactSection{
+  height: 200px;
+  background-color: #505050;
+  color: #fff;
+  padding-top: 30px;
+  text-align: center;
+  font-size: 25px;
+}
+
+.contactSection a:hover{
+  background-color: #505050;
+  opacity: 0.2;
 }
 
 .projectTiles:hover {
@@ -23,84 +39,7 @@ border-color: white;
 border-width: 1px;
 border-radius: 20px;
 }
-/*
-.projectContainer{
-  background-color: gray;
-  height: 250px;
-  width: 350px;
-  position: relative;
-}
 
-.projectContainer:active{
-  opacity: .2;
-}
-
-.projectImage{
-  opacity: 1;
-  display: block;
-  width: 100%;
-  height: 100%;
-  transition: .5s ease;
-  backface-visibility: hidden;
-}
-
-
-.middle {
-  transition: .5s ease;
-  opacity: 0;
-  position: absolute;
-  height: 250px;
-  width: 350px;
-  display:table;
-  transform: translate(2%, -100%);
-  text-align: left;
-}
-
-
-.projectContainer:hover .projectImage {
-
-  opacity: .2;
-  transition: 1s ;
-}
-
-.projectContainer:hover .middle {
-  opacity: 1;
-
-}
-
-
-.projectContainer:focus .middle {
-  outline: none;
-  box-shadow: none;
-  opacity: 1;
-}
-
-.projectContainer:focus .projectImage {
-    outline: none;
-    box-shadow: none;
-    opacity: .2;
-    transition: 1s ;
-}
-
-.projectText {
-  color: #f5f2d0;
-  font-size: 16px;
-  display: table-cell;
-  vertical-align: bottom;
-
-}
-
-#projectIcons > a{
-  display: inline-block;
-  display: -moz-inline-box;
-  display: inline;
-  zoom: 1;
-  width: 15%;
-  text-align: center;
-
-
-}
-*/
 table{
   border-radius: 20px;
   overflow:hidden;
@@ -110,15 +49,17 @@ th{
   padding-left: 40px;
 }
 
+b {
+color: #998087;
+}
 
 .aboutTitle{
    font-size: 40px;
-     margin-left: 40px;
+   margin-left: 40px;
    color: #998087;
    font-family: 'Thasadith', sans-serif;
    white-space: nowrap;
    overflow:hidden;
-
 }
 
 
@@ -194,8 +135,6 @@ a.projectAnchor{
   1px -1px 0 #000,
   -1px 1px 0 #000,
   1px 1px 0 #000;
-
-
 }
 
 #subOverlay {
@@ -210,7 +149,6 @@ a.projectAnchor{
 .mb_parallax_container {
   height: 100vh;
   width: auto;
-  border-bottom: 5px solid white;
   padding-top: 20vh;
   background-attachment: fixed;
   background-size: cover;
@@ -222,7 +160,6 @@ a.projectAnchor{
 .mb_parallax_container2 {
   height: 100%;
   width: auto;
-  border-bottom: 5px solid white;
   padding-top: 20vh;
   background-attachment: fixed;
   background-size: cover;
@@ -238,9 +175,8 @@ a.projectAnchor{
   background-color: grey;
   opacity: .5;
       z-index: 2;
-
-
 }
+
 
 #mb_parallax_one {
   background-image: url(./img/mauveSFbg-compr.jpg);
