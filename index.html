@@ -33,7 +33,7 @@
           <a class="nav-link" href="#aboutAnchor">ABOUT</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#projectTitle">PROJECTS</a>
+          <a class="nav-link" href="#projectAnchor">PROJECTS</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#">CONTACT</a>
@@ -80,7 +80,6 @@
         Technologies
         </p>
 
-
         <table class="table" style="width:auto;background-color:#f0f0f0;">
             <thead style="background-color:#505050;color:white">
               <tr>
@@ -116,38 +115,76 @@
                   <br>New Relic
                 </td>
               </tr>
-
             </tbody>
           </table>
-
-
       </div>
     </section>
 
-  <div class="mb_parallax_container" id="mb_parallax_three">
+  <div class="mb_parallax_container2" id="mb_parallax_three">
     <section class="projectsSection">
-
+            <a class="projectAnchor" id="projectAnchor"></a>
       <b class="projectTitle" id="projectTitle">Projects.</b><br>
       <br>
-
-      <button type="button" data-toggle="modal" data-target="#exampleModalCenter">
-          <img src="./img/justjams.png"   height="250" width="350" >
+      <!-- Modal Button-->
+      <button class="projectButtons" type="button" data-toggle="modal" data-target="#justjamsModal" >
+          <img class="projectTiles" src="./img/justjams.png"   height="250" width="350" >
       </button>
 
       <!-- Modal -->
-      <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+      <div class="modal fade" id="justjamsModal" tabindex="-1" role="dialog" aria-labelledby="justjamsModelTitle" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered" role="document">
           <div class="modal-content">
             <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalCenterTitle">Chitter Box</h5>
+              <h5 class="modal-title" id="justjamsModelTitle">Just Jams</h5>
               <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
               </button>
             </div>
             <div class="modal-body">
-              This is a real time chat application built using React.js, HTML, CSS, and Bootstrap.
-              The database is connected with Firebase.
-                    <img src="./img/justjams.png"   height="250" width="350" >
+              <img src="./img/justjams.png" height="350" width="450" >
+              This is a web based music player built using React.js, HTML, CSS, and Bootstrap.
+              <center><a href="https://github.com/judypatoodie/just-jams" target="_blank"> <br>
+                <img id="giticon" src="./img/githubicon.svg" height="42" width="42">
+              </a>
+              <a href="https://just-jams.herokuapp.com/" target="_blank">
+                <img  id="giticon" src="./img/launchApp.svg" height="42" width="42">
+              </a></center>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Modal Button-->
+      <button class="projectButtons" type="button" data-toggle="modal" data-target="#chitterBoxModal" >
+          <img class="projectTiles" src="./img/chitterBox.png" height="250" width="350">
+      </button>
+
+      <!-- Modal -->
+      <div class="modal fade" id="chitterBoxModal" tabindex="-1" role="dialog" aria-labelledby="chitterBoxModelTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="chitterBoxModelTitle">
+                Chitter Box
+              </h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <img src="./img/chitterBox.png" height="250" width="460">
+              This is a web based, real-time chat application built using React.js.
+              It is using Firebase as it's database, connecting via it's API.
+              Users can sign-in using Google Authentication with Google's API.
+              <center><a href="https://github.com/judypatoodie/chitter-box" target="_blank"> <br>
+                <img  id="giticon" src="./img/githubicon.svg" height="42" width="42">
+              </a>
+              <a href="https://chat-msging-app.herokuapp.com/" target="_blank">
+                <img  id="giticon" src="./img/launchApp.svg" height="42" width="42">
+              </a></center>
             </div>
             <div class="modal-footer">
               <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -157,7 +194,41 @@
       </div>
 
 
-  <span style="padding-left:30px"><img src="./img/chitterBox.png" height="250" width="350"></span>
+      <!-- Modal Button-->
+      <button class="projectButtons" type="button" data-toggle="modal" data-target="#supportPortalModal" >
+          <img class="projectTiles" src="./img/omnSupportPortal.png"   height="250" width="350" >
+      </button>
+
+      <!-- Modal -->
+      <div class="modal fade" id="supportPortalModal" tabindex="-1" role="dialog" aria-labelledby="supportPortalModelTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="supportPortalModelTitle">
+                One Market Network Support Portal
+              </h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <img src="./img/omnSupportPortal.png" height="350" width="450" >
+              <img src="./img/supportFAQpg.png" height="350" width="450" >
+              This is the company's Support Portal that I developed using JavaScript,
+              HTML, and CSS. This is hosted on Zendesk.
+
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+
+
 
 <!--
       <div class="projectContainer" tabindex="0"  style="margin-top:20px">
