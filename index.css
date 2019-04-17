@@ -33,6 +33,17 @@
   margin-top: 15px;
 }
 
+.projectTitle:after {
+  content: "";
+  display: inline-block;
+  height: 1px;
+  width: 80%;
+  background-color: #fff;
+  position: relative;
+  top: -10px;
+  left: 15px;
+}
+
 #giticon:hover{
 border-style: solid;
 border-color: white;
@@ -102,9 +113,9 @@ a.projectAnchor{
 }
 
 .profilepic{
-  border-radius: 50%;
+
   padding-right: 20px;
-  width: 250px;
+  width: 220px;
   height: 240px;
   position: right;
 }
@@ -118,7 +129,7 @@ a.projectAnchor{
 
 .projectsSection{
   padding-left:40px;
-  top:-100px;
+  top:-150px;
 }
 
 .overlay {
