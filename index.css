@@ -159,6 +159,10 @@ a.projectAnchor{
   height: 100vh;
   width: auto;
   padding-top: 20vh;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position:  top center;
+  background-repeat: no-repeat;
 
 }
 
@@ -186,15 +190,8 @@ a.projectAnchor{
 #mb_parallax_one {
   background-image: url(./img/mauveSFbg-compr.jpg);
       z-index: -1;
-      background-attachment: fixed;
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
+
 }
-@media screen and (max-width: 768px) {
-	.parallax_img {
-		background-attachment: inherit;
-	}
 
 #mb_parallax_two {
   background-color:white;
