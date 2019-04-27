@@ -170,9 +170,9 @@ a.projectAnchor{
   height: 100%;
   width: auto;
   padding-top: 20vh;
-  background-attachment: fixed;
   background-size: cover;
   background-position:  top center;
+  background-attachment: scroll;
   background-repeat: no-repeat;
 
 }
@@ -190,7 +190,7 @@ a.projectAnchor{
 #mb_parallax_one {
   background-image: url(./img/mauveSFbg-compr.jpg);
       z-index: -1;
-
+       background-attachment: scroll;
 }
 
 #mb_parallax_two {
