@@ -1,4 +1,3 @@
-
 * {
   margin: 0px;
   padding: 0px;
@@ -17,6 +16,11 @@
   padding-top: 30px;
   text-align: center;
   font-size: 25px;
+}
+
+.col-md-4 a:hover{
+  background-color: #998087;
+  opacity: 0.2;
 }
 
 .contactSection a:hover{
@@ -51,10 +55,9 @@ border-width: 1px;
 border-radius: 20px;
 }
 
-
-
 table{
-  padding-left: 40px;
+  border-radius: 20px;
+  overflow:hidden;
 }
 
 b {
@@ -110,25 +113,22 @@ a.projectAnchor{
 }
 
 .profilepic{
-
   padding-right: 20px;
-  width: 170px;
-  height: 210px;
+  width: 220px;
+  height: 240px;
   position: right;
 }
 
 .projectTitle{
    font-size: 40px;
    color: white;
-
-
 }
 
 .projectsSection{
   padding-left:40px;
-  padding-right: 40px;
   top:-120px;
 }
+
 
 .card-text{
   font-size: 15px;
@@ -136,6 +136,7 @@ a.projectAnchor{
 
 .card{
   margin-top: 20px;
+  width: 90%;
 }
 
 .overlay {
@@ -178,9 +179,9 @@ a.projectAnchor{
   height: 100%;
   width: auto;
   padding-top: 20vh;
+  background-attachment: fixed;
   background-size: cover;
   background-position:  top center;
-  background-attachment: scroll;
   background-repeat: no-repeat;
 
 }
@@ -198,7 +199,9 @@ a.projectAnchor{
 #mb_parallax_one {
   background-image: url(./img/mauveSFbg-compr.jpg);
       z-index: -1;
-       background-attachment: scroll;
+
+
+
 }
 
 #mb_parallax_two {
