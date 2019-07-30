@@ -1,7 +1,8 @@
 $(document).ready(function() {
 window.onload = function() {
-  $('.overlay').hide().fadeIn(2000);
-  $('#subOverlay').hide().fadeIn(5000);
+  $('.overlaySection').hide();
+  $('.overlaySection').fadeIn(2000);
+  //$('#subOverlay').hide().fadeIn(5000);
 }
 $("a").on('click', function(event) {
 
