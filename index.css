@@ -200,7 +200,7 @@ a.projectAnchor{
   background-image: url(./img/mauveSFbg-compr.jpg);
       z-index: -1;
 
-
+background-attachment: scroll;
 
 }
 
